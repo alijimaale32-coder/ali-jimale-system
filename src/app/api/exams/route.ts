@@ -88,14 +88,14 @@ export async function POST(request: NextRequest) {
         const buffer = Buffer.from(bytes);
 
         // Upload to GridFS
-        const bucket = new GridFSBucket(db, { bucketName: 'exams' });
+        const bucket = new GridFSBucket(db as any, { bucketName: 'exams' });
         const uploadStream = bucket.openUploadStream(file.name, {
             contentType: file.type,
             metadata: {
                 uploadedBy: session.userId,
                 title: title
             }
-        });
+        } as any);
 
         // Use a promise to handle the stream upload
         const gridFsId = await new Promise((resolve, reject) => {
@@ -112,7 +112,7 @@ export async function POST(request: NextRequest) {
             fileType: file.type,
             fileSize: file.size,
             fileUrl: `/api/exams/download/${gridFsId}`,
-            gridFsId: gridFsId.toString(),
+            gridFsId: (gridFsId as any).toString(),
             uploadedBy: session.userId,
             status: 'Pending'
         });
@@ -177,7 +177,7 @@ export async function DELETE(request: NextRequest) {
         if (exam.gridFsId) {
             const db = mongoose.connection.db;
             if (db) {
-                const bucket = new GridFSBucket(db, { bucketName: 'exams' });
+                const bucket = new GridFSBucket(db as any, { bucketName: 'exams' });
                 try {
                     await bucket.delete(new mongoose.Types.ObjectId(exam.gridFsId) as any);
                 } catch (err) {

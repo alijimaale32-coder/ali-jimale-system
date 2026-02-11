@@ -5,9 +5,10 @@ import { GridFSBucket, ObjectId } from 'mongodb';
 
 export async function GET(
     request: NextRequest,
-    { params }: { params: { fileId: string } }
+    { params }: { params: Promise<{ fileId: string }> }
 ) {
     try {
+        const { fileId } = await params;
         await connectDB();
         const db = mongoose.connection.db;
 
@@ -15,11 +16,9 @@ export async function GET(
             throw new Error('Database connection not established');
         }
 
-        const bucket = new GridFSBucket(db, {
+        const bucket = new GridFSBucket(db as any, {
             bucketName: 'exams'
         });
-
-        const fileId = params.fileId;
 
         try {
             const objectId = new ObjectId(fileId);
@@ -29,7 +28,7 @@ export async function GET(
                 return NextResponse.json({ success: false, message: 'File not found' }, { status: 404 });
             }
 
-            const file = files[0];
+            const file = files[0] as any;
             const stream = bucket.openDownloadStream(objectId);
 
             // Create a response with the stream

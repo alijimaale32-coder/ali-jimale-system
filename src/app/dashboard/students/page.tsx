@@ -5,7 +5,7 @@ import DashboardLayout from '@/components/DashboardLayout'
 import { Plus, Search, Filter, MoreVertical, GraduationCap, Edit2, Trash2, Loader2 } from 'lucide-react'
 import { translations } from '@/lib/translations'
 
-interface Student {
+export interface Student {
     _id?: string;
     name: string;
     studentId: string;

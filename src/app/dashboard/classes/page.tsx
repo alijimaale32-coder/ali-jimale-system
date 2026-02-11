@@ -5,7 +5,7 @@ import DashboardLayout from '@/components/DashboardLayout'
 import { Plus, Search, Users, Edit2, Trash2, Loader2, BookOpen } from 'lucide-react'
 import { translations } from '@/lib/translations'
 
-interface Class {
+export interface Class {
     _id?: string;
     name: string;
     subject: string;
@@ -17,6 +17,19 @@ interface Class {
     } | string | null;
     students?: any[];
     capacity?: number;
+    departmentId?: string;
+    className?: string;
+    gender?: string;
+    teacherName?: string;
+}
+
+export interface Department {
+    id: string;
+    nameArabic: string;
+    nameEnglish: string;
+    bgColor: string;
+    borderColor: string;
+    color: string;
 }
 
 export default function ClassesPage() {
