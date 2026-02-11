@@ -1,0 +1,3 @@
+Full Name | Gender | Birthday | Place of Birth | Father Phone | Mother Phone | Mother Name | District | Clan | Age | Magaca Xalqada | Goobta Xalqada | Enrollment Date | Graduation Date
+Hussein Mohamed Shari Jamale | Boy | 2006-01-01 | Mogadishu | 0615399851 | 0615835628 | Tahra Hussein Mohamed | Kahda | Mahmoud Hiraab | 18 | Abi Bin Ka'b | Kilo 13 | 2021-01-01 | 2022-12-31
+Ismail Mohamed Shari Jamale | Boy | 2005-01-01 | Mogadishu | 0615552285 | 06105836228 | Tahra Hussein Mohamed | Kahda | Mahmoud Hiraab | 19 | Abi Bin Ka'b | Kilo 13 | 2021-01-01 | 2022-12-31

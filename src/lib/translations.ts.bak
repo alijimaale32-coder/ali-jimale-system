@@ -1,0 +1,441 @@
+// Arabic Translation System for Ali Jim'ale Institute
+// Complete translations for all UI elements
+
+export const translations = {
+    ar: {
+        // Navigation
+        nav: {
+            dashboard: 'لوحة التحكم',
+            classes: 'الفصول الدراسية',
+            students: 'الطلاب',
+            teachers: 'المعلمون',
+            attendance: 'الحضور',
+            exams: 'الاختبارات',
+            financials: 'المالية',
+            reports: 'التقارير',
+            settings: 'الإعدادات',
+            signOut: 'تسجيل الخروج',
+        },
+
+        // Common actions
+        actions: {
+            save: 'حفظ',
+            cancel: 'إلغاء',
+            edit: 'تعديل',
+            delete: 'حذف',
+            add: 'إضافة',
+            create: 'إنشاء',
+            update: 'تحديث',
+            submit: 'إرسال',
+            close: 'إغلاق',
+            confirm: 'تأكيد',
+            search: 'بحث',
+            filter: 'تصفية',
+            view: 'عرض',
+            download: 'تحميل',
+            upload: 'رفع',
+            export: 'تصدير',
+            import: 'استيراد',
+        },
+
+        // Status words
+        status: {
+            active: 'نشط',
+            inactive: 'غير نشط',
+            pending: 'معلق',
+            completed: 'مكتمل',
+            success: 'نجاح',
+            error: 'خطأ',
+            loading: 'جار التحميل',
+            required: 'مطلوب',
+            optional: 'اختياري',
+        },
+
+        // Dashboard
+        dashboard: {
+            title: 'بوابة معهد علي جمعالي',
+            subtitle: 'تمكين الجيل القادم من القادة بالتصميم والتكنولوجيا العالمية',
+            bismillah: 'بسم الله الرحمن الرحيم',
+            institutionalPortal: 'البوابة المؤسسية',
+
+            stats: {
+                studentEnrollment: 'تسجيل الطلاب',
+                attendanceVelocity: 'معدل الحضور',
+                academicProgress: 'التقدم الأكاديمي',
+                systemSecurity: 'أمان النظام',
+                totalActive: 'إجمالي النشط',
+                boys: 'الأولاد',
+                girls: 'البنات',
+                growth: 'النمو',
+                onTrack: 'على المسار الصحيح',
+                elite: 'متميز',
+                stable: 'مستقر',
+                secure: 'آمن',
+                verified: 'موثق',
+                evaluating: 'قيد التقييم',
+            },
+
+            insights: {
+                title: 'رؤى مؤسسية',
+                liveUpdate: 'تحديث مباشر',
+                viewFullAnalytics: 'عرض التحليلات الكاملة',
+                trend: 'الاتجاه',
+            },
+
+            hadith: {
+                title: 'حديث اليوم',
+                source: 'المصدر',
+            },
+        },
+
+        // Students
+        students: {
+            title: 'دليل الطلاب',
+            subtitle: 'إدارة التسجيلات مع البيانات القبلية والبيولوجية',
+            registerNew: 'تسجيل طالب جديد',
+            bulkImport: 'استيراد جماعي',
+
+            stats: {
+                totalActive: 'إجمالي النشط',
+                boys: 'الأولاد',
+                girls: 'البنات',
+                growth: 'النمو',
+            },
+
+            search: {
+                placeholder: 'البحث بالاسم، المعرف، القبلية أو الحلقة...',
+                detailedFilters: 'مرشحات مفصلة',
+            },
+
+            table: {
+                studentName: 'اسم الطالب',
+                xalqada: 'مجاميع / موقع الحلقة',
+                clan: 'القبيلة',
+                gender: 'الجنس',
+                parentContacts: 'اتصالات الوالدين',
+                waqtiga: 'الوقت (الدخول/التخرج)',
+                actions: 'الإجراءات',
+                noStudents: 'لم يتم العثور على طلاب. أضف طالبك الأول لرؤيته هنا.',
+                location: 'الموقع',
+                in: 'الدخول',
+                out: 'التخرج',
+                father: 'الأب',
+                mother: 'الأم',
+            },
+
+            form: {
+                title: 'تسجيل طالب جديد',
+                editTitle: 'تعديل بيانات الطالب',
+
+                // Personal Info
+                personalInfo: 'المعلومات الشخصية',
+                fullName: 'الاسم الكامل',
+                fullNamePlaceholder: 'أدخل الاسم الكامل للطالب',
+                gender: 'الجنس',
+                boy: 'ذكر',
+                girl: 'أنثى',
+                birthday: 'تاريخ الميلاد',
+                placeOfBirth: 'مكان الميلاد',
+                placeOfBirthPlaceholder: 'مثال: مقديشو',
+                age: 'العمر',
+                agePlaceholder: 'العمر بالسنوات',
+
+                // Family Info
+                familyInfo: 'معلومات العائلة',
+                fatherNumber: 'هاتف الأب',
+                fatherNumberPlaceholder: '061XXXXXXX',
+                motherName: 'اسم الأم',
+                motherNamePlaceholder: 'أدخل اسم الأم',
+                motherNumber: 'هاتف الأم',
+                motherNumberPlaceholder: '061XXXXXXX',
+
+                // Location Info
+                locationInfo: 'معلومات الموقع',
+                district: 'المنطقة',
+                districtPlaceholder: 'مثال: وبري',
+                clan: 'القبيلة',
+                clanPlaceholder: 'أدخل القبيلة',
+
+                // Xalqada Info
+                xalqadaInfo: 'معلومات الحلقة',
+                magacaXalqada: 'مجاميع الحلقة',
+                magacaXalqadaPlaceholder: 'اسم الحلقة',
+                goobtaXalqada: 'موقع الحلقة',
+                goobtaXalqadaPlaceholder: 'موقع الحلقة',
+
+                // Academic Info
+                academicInfo: 'المعلومات الأكاديمية',
+                waqtigaBiiray: 'تاريخ الدخول',
+                waqtigaBaxay: 'تاريخ التخرج المتوقع',
+                classAssignment: 'تعيين الفصل',
+                selectClass: 'اختر الفصل',
+                noClass: 'لا يوجد فصل',
+                status: 'الحالة',
+
+                // Messages
+                registering: 'جار التسجيل...',
+                updating: 'جار التحديث...',
+                successMessage: 'تم تسجيل الطالب بنجاح!',
+                updateSuccessMessage: 'تم تحديث بيانات الطالب بنجاح!',
+                errorMessage: 'فشل التسجيل. يرجى المحاولة مرة أخرى.',
+            },
+
+            delete: {
+                confirm: 'هل أنت متأكد من حذف سجلات هذا الطالب؟ لا يمكن التراجع عن هذا الإجراء.',
+                success: 'تم حذف الطالب بنجاح',
+                error: 'فشل حذف الطالب',
+            },
+        },
+
+        // Classes
+        classes: {
+            title: 'إدارة الفصول',
+            subtitle: 'إنشاء وإدارة الفصول الدراسية حسب الأقسام',
+            createNew: 'إنشاء فصل جديد',
+
+            departments: {
+                ibtidai: 'ابتدائي',
+                idadi: 'إعدادي',
+                thanawi: 'ثانوي',
+            },
+
+            stats: {
+                totalClasses: 'إجمالي الفصول',
+                totalStudents: 'إجمالي الطلاب',
+                activeTeachers: 'المعلمون النشطون',
+            },
+
+            filters: {
+                all: 'الكل',
+                boys: 'الأولاد',
+                girls: 'البنات',
+                department: 'القسم',
+            },
+
+            card: {
+                teacher: 'المعلم',
+                students: 'طالب',
+                academicYear: 'العام الدراسي',
+                viewStudents: 'عرض الطلاب',
+                takeAttendance: 'تسجيل الحضور',
+                editClass: 'تعديل الفصل',
+                deleteClass: 'حذف الفصل',
+            },
+
+            form: {
+                title: 'إنشاء فصل جديد',
+                editTitle: 'تعديل الفصل',
+                className: 'اسم الفصل',
+                classNamePlaceholder: 'مثال: الفصل الأول أ',
+                department: 'القسم',
+                selectDepartment: 'اختر القسم',
+                gender: 'الجنس',
+                teacherName: 'اسم المعلم',
+                teacherNamePlaceholder: 'أدخل اسم المعلم',
+                academicYear: 'العام الدراسي',
+                academicYearPlaceholder: 'مثال: 2025-2026',
+                creating: 'جار الإنشاء...',
+                updating: 'جار التحديث...',
+            },
+
+            delete: {
+                confirm: 'هل أنت متأكد من حذف هذا الفصل؟ لا يمكن التراجع عن هذا الإجراء.',
+            },
+
+            noClasses: 'لا توجد فصول. أنشئ فصلك الأول!',
+        },
+
+        // Attendance
+        attendance: {
+            title: 'تتبع الحضور',
+            subtitle: 'تسجيل الحضور اليومي للطلاب',
+            takeAttendance: 'تسجيل الحضور',
+
+            selectClass: 'اختر الفصل',
+            selectDate: 'اختر التاريخ',
+            today: 'اليوم',
+
+            sessions: {
+                morning: 'الصباح',
+                afterBreak: 'بعد الاستراحة',
+                afternoon: 'بعد الظهر',
+            },
+
+            status: {
+                present: 'حاضر',
+                absent: 'غائب',
+                late: 'متأخر',
+                excused: 'معذور',
+            },
+
+            actions: {
+                markAllPresent: 'تحديد الكل حاضر',
+                markAllAbsent: 'تحديد الكل غائب',
+                saveAttendance: 'حفظ الحضور',
+                saving: 'جار الحفظ...',
+            },
+
+            stats: {
+                totalStudents: 'إجمالي الطلاب',
+                present: 'حاضر',
+                absent: 'غائب',
+                attendanceRate: 'معدل الحضور',
+            },
+
+            messages: {
+                selectClassFirst: 'يرجى اختيار فصل أولاً',
+                saveSuccess: 'تم حفظ الحضور بنجاح!',
+                saveError: 'فشل حفظ الحضور',
+                noStudents: 'لا يوجد طلاب في هذا الفصل',
+            },
+        },
+
+        // Teachers
+        teachers: {
+            title: 'إدارة المعلمين',
+            subtitle: 'سجلات المعلمين والموظفين',
+            addNew: 'إضافة معلم جديد',
+
+            table: {
+                name: 'الاسم',
+                subject: 'المادة',
+                phone: 'الهاتف',
+                email: 'البريد الإلكتروني',
+                classes: 'الفصول',
+                status: 'الحالة',
+                actions: 'الإجراءات',
+            },
+
+            form: {
+                title: 'إضافة معلم جديد',
+                editTitle: 'تعديل بيانات المعلم',
+                fullName: 'الاسم الكامل',
+                subject: 'المادة',
+                phoneNumber: 'رقم الهاتف',
+                email: 'البريد الإلكتروني',
+                address: 'العنوان',
+                qualification: 'المؤهل',
+                experience: 'الخبرة (بالسنوات)',
+                joiningDate: 'تاريخ الالتحاق',
+            },
+        },
+
+        // Exams
+        exams: {
+            title: 'إدارة الاختبارات',
+            subtitle: 'جدولة وإدارة الاختبارات',
+            createNew: 'إنشاء اختبار جديد',
+            uploadResults: 'رفع النتائج',
+        },
+
+        // Financials
+        financials: {
+            title: 'إدارة المالية',
+            subtitle: 'تتبع الرسوم والمدفوعات',
+            revenue: 'الإيرادات',
+            expenses: 'المصروفات',
+            balance: 'الرصيد',
+        },
+
+        // Settings
+        settings: {
+            title: 'الإعدادات',
+            subtitle: 'تهيئة النظام',
+            general: 'عام',
+            users: 'المستخدمون',
+            security: 'الأمان',
+            backup: 'النسخ الاحتياطي',
+        },
+
+        // Auth
+        auth: {
+            authenticatedAs: 'مصادق عليه باسم',
+            unknownUser: 'مستخدم غير معروف',
+            role: 'الدور',
+            admin: 'مدير',
+            manager: 'مشرف',
+            teacher: 'معلم',
+            guest: 'ضيف',
+        },
+
+        // AI Assistant
+        ai: {
+            greeting: 'السلام عليكم! كيف يمكنني مساعدتك اليوم؟',
+            placeholder: 'اكتب رسالتك هنا...',
+            thinking: 'جار التفكير...',
+            send: 'إرسال',
+        },
+
+        // Common messages
+        messages: {
+            noData: 'لا توجد بيانات متاحة',
+            loadingData: 'جار تحميل البيانات...',
+            errorLoadingData: 'خطأ في تحميل البيانات',
+            operationSuccess: 'تمت العملية بنجاح',
+            operationFailed: 'فشلت العملية',
+            confirmAction: 'هل أنت متأكد من هذا الإجراء؟',
+            cannotUndo: 'لا يمكن التراجع عن هذا الإجراء',
+        },
+
+        // Additional keys for new pages
+        students: 'الطلاب',
+        classes: 'الفصول الدراسية',
+        teachers: 'المعلمون',
+        attendance: 'الحضور',
+        totalStudents: 'إجمالي الطلاب',
+        totalClasses: 'إجمالي الفصول',
+        totalTeachers: 'إجمالي المعلمين',
+        addStudent: 'إضافة طالب',
+        addClass: 'إنشاء فصل',
+        searchStudents: 'البحث عن طلاب...',
+        searchClasses: 'البحث عن فصول...',
+        searchTeachers: 'البحث عن معلمين...',
+        filter: 'تصفية',
+        studentID: 'رقم الطالب',
+        name: 'الاسم',
+        gender: 'الجنس',
+        gradeLevel: 'المستوى الدراسي',
+        age: 'العمر',
+        parentContact: 'اتصال الوالدين',
+        actions: 'الإجراءات',
+        male: 'ذكر',
+        female: 'أنثى',
+        editStudent: 'تعديل طالب',
+        update: 'تحديث',
+        add: 'إضافة',
+        cancel: 'إلغاء',
+        address: 'العنوان',
+        className: 'اسم الفصل',
+        subject: 'المادة',
+        capacity: 'السعة',
+        teacher: 'المعلم',
+        selectTeacher: 'اختر المعلم',
+        schedule: 'الجدول الزمني',
+        notAssigned: 'غير مخصص',
+        editClass: 'تعديل الفصل',
+        teachersRegisterNote: 'المعلمون يسجلون عبر صفحة التسجيل',
+        email: 'البريد الإلكتروني',
+        joined: 'انضم في',
+        editTeacher: 'تعديل المعلم',
+        recordsToday: 'سجلات',
+        markAttendance: 'تسجيل الحضور',
+        selectClass: 'اختر الفصل',
+        allClasses: 'جميع الفصول',
+        selectDate: 'اختر التاريخ',
+        quickMark: 'تسجيل سريع',
+        present: 'حاضر',
+        absent: 'غائب',
+        late: 'متأخر',
+        excused: 'معذور',
+        attendanceRecords: 'سجلات الحضور',
+        class: 'الفصل',
+        student: 'الطالب',
+        selectStudent: 'اختر الطالب',
+        status: 'الحالة',
+        notes: 'ملاحظات',
+        mark: 'تسجيل',
+    }
+}
+
+// Export type for TypeScript autocomplete
+export type TranslationKey = keyof typeof translations
