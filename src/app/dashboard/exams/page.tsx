@@ -207,7 +207,7 @@ export default function ExamsPage() {
                                             <div className="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center text-primary mb-4 transform -rotate-6 group-hover:rotate-0 transition-transform shadow-lg">
                                                 <FileUp size={40} />
                                             </div>
-                                            <h3 className="text-xl font-black text-slate-900 text-center uppercase tracking-tight">{translations.actions.upload} {translations.exams}</h3>
+                                            <h3 className="text-xl font-black text-slate-900 text-center uppercase tracking-tight">{translations.commonActions.upload} {translations.exams}</h3>
                                             <p className="text-slate-500 font-medium mb-6 text-center px-4 text-sm mt-1">{translations.searchStudents || "Drag and drop any file here, or browse"}</p>
                                             <div className="flex gap-4">
                                                 <span className="text-[9px] font-black uppercase text-primary/40 tracking-[0.2em] border border-primary/10 px-2 py-1 rounded">LOCAL MONGODB STORAGE</span>
@@ -284,7 +284,7 @@ export default function ExamsPage() {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className="w-11 h-11 rounded-2xl flex items-center justify-center text-slate-500 bg-white border border-slate-100 hover:bg-slate-900 hover:text-white transition-all shadow-sm group/btn"
-                                                        title={translations.actions.view}
+                                                        title={translations.commonActions.view}
                                                     >
                                                         <Eye size={18} className="group-hover/btn:scale-110 transition-transform" />
                                                     </a>
@@ -292,7 +292,7 @@ export default function ExamsPage() {
                                                         href={exam.fileUrl}
                                                         download={exam.fileName}
                                                         className="w-11 h-11 rounded-2xl flex items-center justify-center text-slate-500 bg-white border border-slate-100 hover:bg-primary hover:text-white transition-all shadow-sm group/btn"
-                                                        title={translations.actions.download}
+                                                        title={translations.commonActions.download}
                                                     >
                                                         <Download size={18} className="group-hover/btn:scale-110 transition-transform" />
                                                     </a>
@@ -300,7 +300,7 @@ export default function ExamsPage() {
                                                         <button
                                                             onClick={() => handleDelete(exam._id)}
                                                             className="w-11 h-11 rounded-2xl flex items-center justify-center text-slate-400 bg-white border border-slate-100 hover:bg-red-500 hover:text-white transition-all shadow-sm group/btn"
-                                                            title={translations.actions.delete}
+                                                            title={translations.commonActions.delete}
                                                         >
                                                             <Trash2 size={18} className="group-hover/btn:scale-110 transition-transform" />
                                                         </button>
@@ -354,7 +354,7 @@ export default function ExamsPage() {
                                     Database Administration
                                 </h4>
                                 <p className="text-[11px] text-emerald-800/60 font-medium leading-relaxed italic">
-                                    "Exam materials are now natively hosted on institute servers. This removal of Firebase dependencies ensures full data sovereignty."
+                                    &quot;Exam materials are now natively hosted on institute servers. This removal of Firebase dependencies ensures full data sovereignty.&quot;
                                 </p>
                             </div>
                         )}
